@@ -1,0 +1,30 @@
+button {
+    font-weight: 600;
+    background-color: #cc801a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: 1px solid #97a5b4;
+    border-radius: 4px;
+    font-size: 16px;
+    color: whitesmoke;
+    height: 56px;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary {
+    float: right;
+    margin-left: 20px;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.hide {
+    display: none;
+}

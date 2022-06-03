@@ -1,0 +1,33 @@
+.questionBox {
+    background-color: antiquewhite;
+    font-size: 24px;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 5px;
+}
+
+.answer {
+    cursor: pointer;
+    margin: 20px 10px;
+    border-radius: 4px;
+    border: 1px solid #ccd6e0;
+    padding: 10px 5px;
+    font-size: 18px;
+}
+
+.answerHighlighted {
+    border: 1px solid #de8a1b;
+    background-color: #f5d8b2;
+}
+
+.answer:hover {
+    background-color: #f5d8b2;
+}
+
+.answerText {
+    padding-left: 10px;
+}
+
+.questionBox p {
+    font-style: italic;
+}

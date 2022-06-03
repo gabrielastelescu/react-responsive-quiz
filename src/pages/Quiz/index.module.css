@@ -1,0 +1,52 @@
+@media screen and(min-width: 820px) {
+    .quiz {
+        width: calc(100% - 112px);
+    }
+}
+
+.quiz {
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    min-width: 288px;
+    max-width: 800px;
+}
+
+.quiz main {
+    width: 100%;
+}
+
+.quiz img {
+    width: 100%;
+    height: auto;
+    max-width: 800px;
+    max-height: 400px;
+}
+
+.quiz h1 {
+    clear: both;
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.pop {
+    display: inline-block;
+    animation: pop 3.25s ease-in-out;
+    animation-iteration-count: 2;
+}
+
+.withDelay {
+    animation-delay: 1s;
+}
+
+@keyframes pop {
+    50% {
+        padding: 0 20px;
+        transform: scale(1.25);
+    }
+}

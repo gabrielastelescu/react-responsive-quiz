@@ -1,0 +1,13 @@
+.buttonsWrapper {
+    box-sizing: border-box;
+    display: flex;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    font-size: 18px;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+}
