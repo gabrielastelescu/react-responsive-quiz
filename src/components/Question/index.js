@@ -36,7 +36,9 @@ function Question(props) {
     if (currentQuestion) {
         for (const [key, value] of Object.entries(currentQuestion.answers)) {
             answers.push(
-                <div key={currentQuestion.id + key} onClick={() => handleSelectQuestion(key)} className={`${classes.answer} ${questionAnswerMap.get(currentQuestionId) === key ? classes.answerHighlighted : ''}`} >
+                <div key={currentQuestion.id + key} onClick={() => handleSelectQuestion(key)} 
+                className={`${classes.answers} ${questionAnswerMap.get(currentQuestionId) === key 
+                ? classes.answerSelected : ''}`} >
                     <input type="radio"
                         id={key}
                         name={"answer-" + key}
@@ -51,10 +53,12 @@ function Question(props) {
 
     return (
         <>
-            <div className={classes.questionBox}>
-                <p>Question {currentQuestionId}/{Questions.length}</p>
-                <h3> {currentQuestion.question} </h3>
-                <div className='answersBox' onChange={onSelectedQuestionChanged}>
+            <div className={classes.wrapper}>
+                <div className={classes.question}>
+                    <p>Question {currentQuestionId}/{Questions.length}</p>
+                    <h3> {currentQuestion.question} </h3>
+                </div>
+                <div onChange={onSelectedQuestionChanged}>
                     {answers}
                 </div>
             </div>

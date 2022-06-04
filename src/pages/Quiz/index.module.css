@@ -1,7 +1,9 @@
-@media screen and(min-width: 820px) {
+@media screen and ( min-width: 820px ) {
+
     .quiz {
         width: calc(100% - 112px);
     }
+    
 }
 
 .quiz {
@@ -14,6 +16,7 @@
     padding: 0 20px;
     min-width: 288px;
     max-width: 800px;
+    /* height: 50vh; */
 }
 
 .quiz main {

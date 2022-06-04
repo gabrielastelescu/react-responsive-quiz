@@ -1,4 +1,5 @@
 .result h2 {
+    padding: 10px 0;
     margin: 0;
     line-height: 30px;
     text-align: center;
@@ -26,8 +27,9 @@
 .result {
     background: #f5f7f9;
     box-sizing: border-box;
-    padding: 60px 40px;
+    padding: 40px;
     margin-bottom: 30px;
+    margin-top: 45px;
 }
 
 .resultText {
